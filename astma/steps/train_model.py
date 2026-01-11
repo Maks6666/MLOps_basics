@@ -13,25 +13,25 @@ experiment_tracker = Client().active_stack.experiment_tracker
 def train_model(x_train: pd.DataFrame, y_train: pd.Series, best_params: dict, name: str) -> ClassifierMixin:
     try:
         if name == "logistic_regression":
-            mlflow.sklearn.autolog()
+            # mlflow.sklearn.autolog()
             model = LogRegr_Custom(**best_params)
             trained_model = model.train_model(x_train, y_train)
             return trained_model
         
         elif name == "support_vector_classifier":
-            mlflow.sklearn.autolog()
+            # mlflow.sklearn.autolog()
             model = SVC_Custom(**best_params)
             trained_model = model.train_model(x_train, y_train)
             return trained_model
         
         elif name == "random_forest_classifier":
-            mlflow.sklearn.autolog()
+            # mlflow.sklearn.autolog()
             model = RFC_Custom(**best_params)
             trained_model = model.train_model(x_train, y_train)
             return trained_model
         
         elif name == "descision_tree_classifier":
-            mlflow.sklearn.autolog()
+            # mlflow.sklearn.autolog()
             model = DTC_Custom(**best_params)
             trained_model = model.train_model(x_train, y_train)
             return trained_model
