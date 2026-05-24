@@ -13,4 +13,4 @@ if __name__ == '__main__':
 
 # zenml integration install mlflow
 
-# mlflow ui --backend-store-uri 'file:/Users/maxkucher/Library/Application Support/zenml/local_stores/0195adce-55dc-4a6f-97c3-4950b2345b47/mlruns'
+#  mlflow ui --backend-store-uri 'file:/Users/maxkucher/Library/Application Support/zenml/local_stores/0195adce-55dc-4a6f-97c3-4950b2345b47/mlruns'
